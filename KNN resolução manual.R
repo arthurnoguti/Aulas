@@ -19,9 +19,6 @@ range(wrn$X2)
 set.seed(2)
 
 y <- c(1:5456)
-sorteio1set.seed(2)
-
-y <- c(1:5456)
 sorteio1 <- sample(y, 1091)
 sorteio2 <- sample(y[-sorteio1], 1091)
 sorteio3 <- sample(y[c(-sorteio1, - sorteio2)], 1091)
@@ -41,26 +38,7 @@ wrn_treinamento4 <- wrn[-sorteio4, ]
 wrn_teste4 <- wrn[sorteio4, ]
 
 wrn_treinamento5 <- wrn[-sorteio5, ]
-wrn_teste5 <- wrn[sorteio5, ] <- sample(y, 1091)
-sorteio2 <- sample(y[-sorteio1], 1091)
-sorteio3 <- sample(y[c(-sorteio1, - sorteio2)], 1091)
-sorteio4 <- sample(y[c(-sorteio1, - sorteio2, -sorteio3)], 1091)
-sorteio5 <- sample(y[c(-sorteio1, - sorteio2, -sorteio3, - sorteio4)], 1092)
-
-wrn_treinamento1 <- wrn[-sorteio1, ]
-wrn_teste1 <- wrn[sorteio1, ]
-
-wrn_treinamento2 <- wrn[-sorteio2, ]
-wrn_teste2 <- wrn[sorteio2, ]
-
-wrn_treinamento3 <- wrn[-sorteio3, ]
-wrn_teste3 <- wrn[sorteio3, ]
-
-wrn_treinamento4 <- wrn[-sorteio4, ]
-wrn_teste4 <- wrn[sorteio4, ]
-
-wrn_treinamento5 <- wrn[-sorteio5, ]
-wrn_teste5 <- wrn[sorteio5, ]
+wrn_teste5 <- wrn[sorteio5, ] 
 
 #### Rodada 1 ####
 # x novo  
